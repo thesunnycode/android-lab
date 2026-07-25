@@ -33,6 +33,7 @@ Lab-01-HelloWorld/
 ├── screenshots/
 │   ├── output.png
 │   ├── test_case_1.png
+│   └── test_case_2.png
 └── README.md
 ```
 
@@ -44,12 +45,16 @@ Lab-01-HelloWorld/
 
 ## Output
 ![Output](screenshots/output.png)
+![Test Case 2 - Name & USN](screenshots/test_case_1.png)
+![Test Case 3 - Life Quote](screenshots/test_case_2.png)
 
-## Test Case
+## Test Cases
 
 | # | Test Case | Screenshot |
 |---|-----------|------------|
-| 1 | App launches and displays the greeting text with **Name & USN** on screen | `screenshots/test_case_1.png` |
+| 1 | App launches and displays the default greeting text ("Hello World!!!") | `screenshots/output.png` |
+| 2 | App displays the greeting text with **Name & USN** on screen | `screenshots/test_case_1.png` |
+| 3 | App displays a custom greeting — a life quote passed into the `Greeting` composable | `screenshots/test_case_2.png` |
 
 ## Conclusion
 This experiment helped understand the basic structure of a Jetpack Compose Android app — how `MainActivity` uses `setContent {}` to render composable UI, and how a simple `Text` composable can display dynamic content on screen.
