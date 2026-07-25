@@ -33,8 +33,6 @@ Lab-01-HelloWorld/
 ├── screenshots/
 │   ├── output.png
 │   ├── test_case_1.png
-│   ├── test_case_2.png
-│   └── test_case_3.png
 └── README.md
 ```
 
