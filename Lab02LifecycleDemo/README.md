@@ -45,21 +45,7 @@ Lab02LifecycleDemo/
 
 ## Demo Video
 
-https://github.com/user-attachments/assets/PLACEHOLDER-REPLACE-AFTER-UPLOAD
-
-<!--
-  GitHub does not render a locally-referenced .mp4 (e.g. screenshots/LIFECYCLE DEMO.mp4)
-  inline on the README page — video playback only works for files uploaded directly
-  through GitHub's own uploader (drag-and-drop into an Issue/PR/README edit box),
-  which generates a github.com/user-attachments/assets/... link.
-
-  To embed it properly:
-  1. Go to this file on GitHub → click the pencil (Edit) icon on README.md
-  2. Drag and drop "LIFECYCLE DEMO.mp4" directly into the edit box
-  3. GitHub uploads it and auto-inserts a working link like:
-     https://github.com/user-attachments/assets/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
-  4. Replace the placeholder link above with that generated one, then commit
--->
+[▶ Watch the demo video](screenshots/LIFECYCLE%20DEMO.mp4) — click to view/download from the repo.
 
 The video demonstrates, in sequence:
 - App launch — `onCreate → onStart → onResume` (Log + Toast)
@@ -67,8 +53,6 @@ The video demonstrates, in sequence:
 - App closed via Back button — `onPause → onStop → onDestroy`
 - The **customized Toast** widget displaying **Name & USN**
 - **Logcat** (filtered by tag `LifecycleDemo`) confirming every transition in real time
-
-If the video doesn't render above, it's also available directly in the repo: [`screenshots/LIFECYCLE DEMO.mp4`](screenshots/LIFECYCLE%20DEMO.mp4)
 
 ## Conclusion
 This experiment helped understand how an Android Activity transitions through its lifecycle states in response to user actions. Combining Toast (for immediate, visible feedback) with Logcat (for a complete, reliable record) showed that not every lifecycle callback is safely observable on screen — `onStop` and `onDestroy` fire after the app is no longer in the foreground, so Logcat remains the dependable source of truth for the full transition sequence.
