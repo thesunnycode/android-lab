@@ -66,7 +66,7 @@ Lab04IntentDemo/
 5. Click **Run ▶** to build and launch the app.
 
 ## Output
-![Login screen on launch](screenshots/output.png)
+<img src="screenshots/output.png" alt="Login screen on launch" width="300">
 
 *The login screen shown when the app is first launched.*
 
