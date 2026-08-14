@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Login/Welcome design system -->
+    <color name="indigo_deep">#241E5E</color>
+    <color name="indigo_mid">#4038B8</color>
+    <color name="indigo_bright">#5B5FEF</color>
+    <color name="indigo_accent">#4B4DED</color>
+    <color name="indigo_text">#1B1B33</color>
+    <color name="field_bg">#F2F3F8</color>
+    <color name="hint_gray">#A0A0B2</color>
+    <color name="subtitle_lavender">#D6D9FF</color>
+    <color name="circle_light">#5C63F5</color>
+    <color name="circle_dark">#1B1652</color>
+</resources>
