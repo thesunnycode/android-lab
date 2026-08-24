@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient_hero">
+
+    <!-- Decorative circles, matching the main screen design system -->
+    <View
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:alpha="0.45"
+        android:background="@drawable/circle_decor_light"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="-70dp"
+        android:layout_marginEnd="-70dp" />
+
+    <View
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:alpha="0.4"
+        android:background="@drawable/circle_decor_dark"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginBottom="-50dp"
+        android:layout_marginStart="-50dp" />
+
+    <View
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:alpha="0.5"
+        android:background="@drawable/circle_decor_light"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="60dp"
+        android:layout_marginStart="24dp" />
+
+    <!-- Centered content -->
+    <TextView
+        android:id="@+id/tvBellIcon"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:background="@drawable/circle_avatar"
+        android:gravity="center"
+        android:text="🔔"
+        android:textSize="42sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/tvDetailTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintVertical_chainStyle="packed"
+        android:layout_marginBottom="24dp" />
+
+    <TextView
+        android:id="@+id/tvDetailTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/tvBellIcon"
+        app:layout_constraintBottom_toTopOf="@id/tvDetailMessage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="10dp" />
+
+    <TextView
+        android:id="@+id/tvDetailMessage"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="15sp"
+        android:lineSpacingExtra="4dp"
+        android:textColor="@color/subtitle_lavender"
+        app:layout_constraintTop_toBottomOf="@id/tvDetailTitle"
+        app:layout_constraintBottom_toTopOf="@id/btnBack"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="40dp" />
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="52dp"
+        android:minWidth="200dp"
+        android:text="Back to app"
+        android:textSize="15sp"
+        android:textAllCaps="false"
+        android:textStyle="bold"
+        android:textColor="@color/indigo_accent"
+        android:background="@drawable/bg_button_rounded_white"
+        app:backgroundTint="@null"
+        app:layout_constraintTop_toBottomOf="@id/tvDetailMessage"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
