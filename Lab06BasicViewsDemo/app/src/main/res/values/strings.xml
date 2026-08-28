@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Lab06BasicViewsDemo</string>
+
+    <string-array name="course_options">
+        <item>BCA</item>
+        <item>MCA</item>
+        <item>MBA</item>
+        <item>B.Tech</item>
+    </string-array>
+</resources>
