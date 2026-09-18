@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- TourPlanner design system: ocean/sky gradient -->
+    <color name="ocean_deep">#012A4A</color>
+    <color name="ocean_mid">#2C7DA0</color>
+    <color name="ocean_bright">#61A5C2</color>
+    <color name="ocean_accent">#0E7C7B</color>
+    <color name="text_primary">#12263A</color>
+    <color name="hint_gray">#8896A6</color>
+    <color name="field_bg">#EEF3F6</color>
+    <color name="circle_light">#61A5C2</color>
+    <color name="circle_dark">#012A4A</color>
+
+    <!-- Category accents -->
+    <color name="adventure_color">#E8734A</color>
+    <color name="heritage_color">#9C6B30</color>
+    <color name="relaxation_color">#2E8B8B</color>
+    <color name="text_secondary">#5A6B7A</color>
+</resources>
