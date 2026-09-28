@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Explore Destinations design system -->
+    <color name="indigo_deep">#241E5E</color>
+    <color name="indigo_mid">#4038B8</color>
+    <color name="indigo_bright">#5B5FEF</color>
+    <color name="indigo_accent">#4B4DED</color>
+    <color name="text_primary">#1B1B33</color>
+    <color name="text_secondary">#6B6B85</color>
+    <color name="card_bg">#FFFFFF</color>
+    <color name="screen_bg">#F4F4FA</color>
+    <color name="chip_bg">#EDEDFB</color>
+
+    <!-- Destination photo placeholders (gradient start/end pairs) -->
+    <color name="manali_start">#4E9F3D</color>
+    <color name="manali_end">#1E5128</color>
+    <color name="goa_start">#00B4D8</color>
+    <color name="goa_end">#0077B6</color>
+    <color name="jaipur_start">#F9A826</color>
+    <color name="jaipur_end">#C1440E</color>
+    <color name="kerala_start">#2E8B57</color>
+    <color name="kerala_end">#145A32</color>
+    <color name="ladakh_start">#8E9AAF</color>
+    <color name="ladakh_end">#4A5568</color>
+    <color name="rishikesh_start">#F76B1C</color>
+    <color name="rishikesh_end">#8A2387</color>
+</resources>
