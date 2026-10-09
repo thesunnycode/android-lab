@@ -1,0 +1,9 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Lab08MenusWebViewDemo" parent="Theme.Material3.Light.NoActionBar">
+        <item name="colorPrimary">@color/brand</item>
+        <item name="colorSecondary">@color/brand_accent</item>
+    </style>
+
+    <style name="Theme.Lab08MenusWebViewDemo" parent="Base.Theme.Lab08MenusWebViewDemo" />
+</resources>

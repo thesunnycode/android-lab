@@ -22,5 +22,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "Lab08ListViewImageViewDemo"
+rootProject.name = "Lab07ListViewImageViewDemo"
 include(":app")

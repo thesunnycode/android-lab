@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Options menu: action items in the Toolbar, the rest in the overflow. -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_home"
+        android:icon="@drawable/ic_home"
+        android:title="Home"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_refresh"
+        android:icon="@drawable/ic_refresh"
+        android:title="Refresh"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_back"
+        android:title="Back"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_forward"
+        android:title="Forward"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_share"
+        android:title="Share page"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_open_external"
+        android:title="Open in browser"
+        app:showAsAction="never" />
+
+    <!-- Sub-menu with a single-choice (radio) group. -->
+    <item
+        android:id="@+id/action_text_size"
+        android:title="Text size"
+        app:showAsAction="never">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/text_small"
+                    android:title="Small (80%)" />
+                <item
+                    android:id="@+id/text_normal"
+                    android:checked="true"
+                    android:title="Normal (100%)" />
+                <item
+                    android:id="@+id/text_large"
+                    android:title="Large (130%)" />
+            </group>
+        </menu>
+    </item>
+
+    <!-- Independent checkable item. -->
+    <item
+        android:id="@+id/action_javascript"
+        android:checkable="true"
+        android:checked="true"
+        android:title="Enable JavaScript"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_about"
+        android:title="About"
+        app:showAsAction="never" />
+</menu>

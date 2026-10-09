@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- StudyHub design system -->
+    <color name="brand_dark">#0F2A47</color>
+    <color name="brand">#1565C0</color>
+    <color name="brand_accent">#4FC3F7</color>
+    <color name="url_pill_bg">#22FFFFFF</color>
+    <color name="screen_bg">#F4F7FB</color>
+</resources>

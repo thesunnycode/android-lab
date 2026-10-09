@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Popup menu anchored to the "Quick Links" button. -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/link_android"
+        android:title="Android Developers" />
+    <item
+        android:id="@+id/link_kotlin"
+        android:title="Kotlin Docs" />
+    <item
+        android:id="@+id/link_material"
+        android:title="Material Design 3" />
+    <item
+        android:id="@+id/link_wikipedia"
+        android:title="Wikipedia: Android" />
+</menu>

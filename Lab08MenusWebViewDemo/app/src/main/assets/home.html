@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>StudyHub Home</title>
+    <style>
+        * { box-sizing: border-box; }
+        body {
+            margin: 0;
+            padding: 16px;
+            font-family: sans-serif;
+            background: #F4F7FB;
+            color: #1B2635;
+        }
+        .hero {
+            background: linear-gradient(135deg, #1565C0, #0F2A47);
+            color: #fff;
+            border-radius: 18px;
+            padding: 20px;
+        }
+        .hero .tag {
+            display: inline-block;
+            font-size: 11px;
+            letter-spacing: 1px;
+            background: rgba(255, 255, 255, 0.18);
+            padding: 4px 10px;
+            border-radius: 12px;
+        }
+        .hero h1 { margin: 12px 0 4px; font-size: 24px; }
+        .hero p { margin: 0; opacity: 0.85; font-size: 14px; }
+        .student {
+            margin-top: 16px;
+            padding: 12px 14px;
+            background: rgba(255, 255, 255, 0.12);
+            border-left: 4px solid #4FC3F7;
+            border-radius: 10px;
+            font-size: 14px;
+        }
+        .student b { font-size: 16px; }
+        h2 { font-size: 15px; margin: 22px 4px 10px; color: #4A5A70; }
+        a.card {
+            display: block;
+            background: #fff;
+            border-radius: 14px;
+            padding: 14px 16px;
+            margin-bottom: 10px;
+            text-decoration: none;
+            color: inherit;
+            box-shadow: 0 1px 3px rgba(15, 42, 71, 0.12);
+        }
+        a.card .title { font-weight: bold; color: #1565C0; }
+        a.card .desc { font-size: 13px; color: #5B6B80; margin-top: 2px; }
+        button {
+            width: 100%;
+            padding: 14px;
+            border: none;
+            border-radius: 12px;
+            background: #4FC3F7;
+            color: #0F2A47;
+            font-size: 15px;
+            font-weight: bold;
+        }
+        .hint { font-size: 12px; color: #7A8899; text-align: center; margin-top: 14px; }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <span class="tag">LAB EXPERIMENT 8</span>
+        <h1>StudyHub Browser</h1>
+        <p>Menus &amp; WebView in Android</p>
+        <div class="student">
+            <b>Sunny Kr Singh</b><br>
+            USN 25MCAR0230 &middot; MCA
+        </div>
+    </div>
+
+    <h2>Study resources</h2>
+    <a class="card" href="https://developer.android.com/develop/ui/views/layout/webapps/webview">
+        <div class="title">WebView guide</div>
+        <div class="desc">developer.android.com &middot; Build web apps in WebView</div>
+    </a>
+    <a class="card" href="https://developer.android.com/develop/ui/views/components/menus">
+        <div class="title">Menus guide</div>
+        <div class="desc">developer.android.com &middot; Options, context &amp; popup menus</div>
+    </a>
+    <a class="card" href="https://kotlinlang.org/docs/home.html">
+        <div class="title">Kotlin documentation</div>
+        <div class="desc">kotlinlang.org &middot; Language reference</div>
+    </a>
+
+    <h2>JavaScript &rarr; Android bridge</h2>
+    <button onclick="greet()">Say hello to Android</button>
+
+    <p class="hint">Long-press any card for the context menu &middot; use &#8942; for more options</p>
+
+    <script>
+        function greet() {
+            if (window.Android) {
+                Android.showToast("Hello from the WebView, Sunny (25MCAR0230)!");
+            }
+        }
+    </script>
+</body>
+</html>

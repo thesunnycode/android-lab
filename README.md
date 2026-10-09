@@ -15,8 +15,14 @@ Each lab is a self-contained Android Studio project covering one core concept.
 | 04 | [`Lab04IntentDemo`](Lab04IntentDemo) | Explicit and implicit intents, passing data between activities |
 | 05 | [`Lab05NotificationDemo`](Lab05NotificationDemo) | Notification channels, building and posting notifications |
 | 06 | [`Lab06BasicViewsDemo`](Lab06BasicViewsDemo) | Basic Android Views — `EditText`, `RadioGroup`, `Spinner`, `CheckBox`, `SeekBar` |
-| 07 | [`Lab07TourPlanner`](Lab07TourPlanner) | TourPlanner — Fragments, Intents, and notifications in a trip-planning flow |
-| 08 | [`Lab08ListViewImageViewDemo`](Lab08ListViewImageViewDemo) | Adaptive UI with `ListView` and `ImageView` — single-pane on phones, two-pane on tablets |
+| 07 | [`Lab07ListViewImageViewDemo`](Lab07ListViewImageViewDemo) | Adaptive UI with `ListView` and `ImageView` — single-pane on phones, two-pane on tablets |
+| 08 | [`Lab08MenusWebViewDemo`](Lab08MenusWebViewDemo) | Options, context and popup menus driving a `WebView` — local HTML, in-app browsing, JS → Kotlin bridge |
+
+### Lab Test
+
+| Project | Concept |
+|---|---|
+| [`LabTestTourPlanner`](LabTestTourPlanner) | TourPlanner — Fragments, Intents, and notifications in a trip-planning flow |
 
 ## Stack
 

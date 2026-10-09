@@ -1,4 +1,4 @@
-# Lab 08 — Create an Adaptive UI using ListView and ImageView
+# Lab 07 — Create an Adaptive UI using ListView and ImageView
 
 ## Aim
 Create an adaptive Android UI built around a `ListView` and `ImageView`, demonstrating how the same activity and data set can present themselves differently on a phone versus a tablet using resource-qualified layouts.
@@ -24,7 +24,7 @@ This shows the classic Android "adaptive list-detail" pattern: one Activity and 
 
 ## Folder Structure
 ```
-Lab08ListViewImageViewDemo/
+Lab07ListViewImageViewDemo/
 ├── app/
 │   ├── build.gradle.kts
 │   └── src/
@@ -62,7 +62,7 @@ Lab08ListViewImageViewDemo/
 
 ## How to Run
 1. Clone this repository to your local machine.
-2. Open Android Studio and select **Open**, then navigate to and select the `Lab08ListViewImageViewDemo` folder.
+2. Open Android Studio and select **Open**, then navigate to and select the `Lab07ListViewImageViewDemo` folder.
 3. Wait for Gradle to sync the project (Android Studio will do this automatically).
 4. Select a target device:
    - A **phone-sized emulator/device** to see the single-pane list → detail Activity flow.

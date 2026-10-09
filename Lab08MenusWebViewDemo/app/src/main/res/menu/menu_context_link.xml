@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Floating context menu shown on long-pressing a link inside the WebView. -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/ctx_open"
+        android:title="Open link" />
+    <item
+        android:id="@+id/ctx_copy"
+        android:title="Copy link address" />
+    <item
+        android:id="@+id/ctx_share"
+        android:title="Share link" />
+</menu>

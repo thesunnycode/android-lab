@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Floating context menu shown on long-pressing anywhere else in the WebView. -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/ctx_reload"
+        android:title="Reload page" />
+    <item
+        android:id="@+id/ctx_copy_page"
+        android:title="Copy page URL" />
+</menu>

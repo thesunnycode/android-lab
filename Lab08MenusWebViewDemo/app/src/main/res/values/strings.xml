@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">StudyHub Browser</string>
+    <string name="quick_links">Quick Links</string>
+    <string name="about_title">About StudyHub Browser</string>
+    <string name="about_message">Lab Experiment 8: Menus and WebView\n\nBuilt by Sunny Kr Singh\nUSN 25MCAR0230\nMCA, Jain (Deemed-to-be University)</string>
+</resources>
