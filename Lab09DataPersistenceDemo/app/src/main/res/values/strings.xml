@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">Study Ledger</string>
+    <string name="experiment_label">ANDROID LAB / EXPERIMENT 09</string>
+    <string name="tagline">Small habits. Lasting progress.</string>
+    <string name="profile_heading">01 / Student profile</string>
+    <string name="profile_hint">Your details, remembered with SharedPreferences.</string>
+    <string name="student_name">Student name</string>
+    <string name="usn">USN</string>
+    <string name="save_profile">Save profile</string>
+    <string name="no_profile">No saved profile. Enter your name and USN.</string>
+    <string name="profile_restored">Restored from SharedPreferences\n%1$s · %2$s</string>
+    <string name="profile_saved">Saved to SharedPreferences\n%1$s · %2$s</string>
+    <string name="name_required">Enter your name</string>
+    <string name="usn_required">Enter your USN</string>
+    <string name="records_heading">02 / Study sessions</string>
+    <string name="records_hint">A local SQLite record of what you learned.</string>
+    <string name="add_session">Add session</string>
+    <string name="edit_session">Edit session</string>
+    <string name="topic">Study topic</string>
+    <string name="minutes">Duration (minutes)</string>
+    <string name="topic_required">Enter a study topic</string>
+    <string name="minutes_invalid">Enter a whole number from 1 to 1440</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
+    <string name="delete_title">Delete this session?</string>
+    <string name="delete_message">Remove “%1$s” from your study log?</string>
+    <string name="session_detail">RECORD #%1$d · %2$d MIN</string>
+    <plurals name="session_summary">
+        <item quantity="one">%1$d session · %2$d minutes total</item>
+        <item quantity="other">%1$d sessions · %2$d minutes total</item>
+    </plurals>
+    <string name="empty_sessions">Your study log starts here.\nAdd a session to save your first SQLite record.</string>
+    <string name="loaded">Records loaded from SQLite.</string>
+    <string name="added">Session saved to SQLite.</string>
+    <string name="updated">Session updated in SQLite.</string>
+    <string name="deleted">Session deleted from SQLite.</string>
+    <string name="storage_error">Could not access storage. Please try again.</string>
+    <string name="missing_record">This record no longer exists. Reopen the app to refresh.</string>
+    <string name="persistence_note">SAVED ON THIS DEVICE\nClose and reopen the app. Your profile and sessions stay.</string>
+</resources>

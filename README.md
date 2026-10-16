@@ -1,7 +1,7 @@
 # Android Lab — MCA Coursework
 
 Android development lab exercises from my **MCA at Jain (Deemed-to-be University)**, written in
-**Kotlin** with **Jetpack Compose**.
+**Kotlin** with **Jetpack Compose and XML Views**.
 
 Each lab is a self-contained Android Studio project covering one core concept.
 
@@ -17,6 +17,7 @@ Each lab is a self-contained Android Studio project covering one core concept.
 | 06 | [`Lab06BasicViewsDemo`](Lab06BasicViewsDemo) | Basic Android Views — `EditText`, `RadioGroup`, `Spinner`, `CheckBox`, `SeekBar` |
 | 07 | [`Lab07ListViewImageViewDemo`](Lab07ListViewImageViewDemo) | Adaptive UI with `ListView` and `ImageView` — single-pane on phones, two-pane on tablets |
 | 08 | [`Lab08MenusWebViewDemo`](Lab08MenusWebViewDemo) | Options, context and popup menus driving a `WebView` — local HTML, in-app browsing, JS → Kotlin bridge |
+| 09 | [`Lab09DataPersistenceDemo`](Lab09DataPersistenceDemo) | SharedPreferences and SQLite — persistent student profile and study-session CRUD |
 
 ### Lab Test
 
@@ -29,7 +30,7 @@ Each lab is a self-contained Android Studio project covering one core concept.
 | | |
 |---|---|
 | Language | Kotlin |
-| UI | Jetpack Compose |
+| UI | Jetpack Compose and XML Views |
 | Build | Gradle (Kotlin DSL — `build.gradle.kts`) |
 | IDE | Android Studio |
 

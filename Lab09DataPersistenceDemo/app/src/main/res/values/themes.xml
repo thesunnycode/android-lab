@@ -1,0 +1,10 @@
+<resources>
+    <style name="Theme.StudyLedger" parent="Theme.Material3.Light.NoActionBar">
+        <item name="colorPrimary">#175C49</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+        <item name="colorSecondary">#175C49</item>
+        <item name="android:fontFamily">sans</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowBackground">#F5F4EE</item>
+    </style>
+</resources>
