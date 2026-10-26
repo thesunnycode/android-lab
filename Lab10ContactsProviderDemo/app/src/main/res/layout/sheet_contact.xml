@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical"
+    android:gravity="center_horizontal" android:paddingStart="24dp" android:paddingEnd="24dp"
+    android:paddingTop="4dp" android:paddingBottom="24dp">
+    <TextView android:id="@+id/avatar" style="@style/Avatar" android:layout_width="72dp" android:layout_height="72dp"
+        android:textSize="26sp" />
+    <TextView android:id="@+id/contactName" android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:layout_marginTop="12dp" android:gravity="center" android:textColor="#2A211C" android:textSize="22sp"
+        android:fontFamily="sans-serif-medium" />
+    <TextView android:id="@+id/contactId" android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:layout_marginTop="2dp" android:gravity="center" android:textColor="#B9472A" android:textSize="11sp"
+        android:textStyle="bold" android:letterSpacing="0.1" />
+    <TextView android:id="@+id/contactDetail" android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:layout_marginTop="16dp" android:background="@drawable/bg_card" android:padding="16dp"
+        android:textColor="#2A211C" android:textSize="14sp" android:lineSpacingExtra="6dp" android:textIsSelectable="true" />
+    <com.google.android.material.button.MaterialButton android:id="@+id/openContact"
+        android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp"
+        android:minHeight="52dp" android:text="@string/open_in_contacts" app:icon="@drawable/ic_open" app:iconSize="18dp" />
+    <com.google.android.material.button.MaterialButton android:id="@+id/shareContact"
+        style="@style/Widget.Material3.Button.OutlinedButton"
+        android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp"
+        android:minHeight="52dp" android:text="@string/share" app:icon="@drawable/ic_share" app:iconSize="18dp" />
+    <com.google.android.material.button.MaterialButton android:id="@+id/deleteContact"
+        style="@style/Widget.Material3.Button.TextButton"
+        android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp"
+        android:minHeight="48dp" android:text="@string/delete" android:textColor="#A13732"
+        app:icon="@drawable/ic_delete" app:iconTint="#A13732" app:iconSize="18dp" />
+</LinearLayout>

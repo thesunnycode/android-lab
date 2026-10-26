@@ -1,0 +1,68 @@
+<resources>
+    <string name="app_name">Contact Bridge</string>
+    <string name="experiment_label">ANDROID LAB / EXPERIMENT 10</string>
+    <string name="tagline">One address book, shared by every app.</string>
+    <string name="bridge_label">HOW DATA MOVES</string>
+    <string name="node_app">This app</string>
+    <string name="node_provider">Contacts\nProvider</string>
+    <string name="node_contacts">Contacts\napp</string>
+    <string name="arrow">⇄</string>
+    <string name="provider_uri">content://com.android.contacts</string>
+    <string name="provider_waiting">Waiting for permission</string>
+    <plurals name="provider_count">
+        <item quantity="one">%1$d contact shared on this device</item>
+        <item quantity="other">%1$d contacts shared on this device</item>
+    </plurals>
+
+    <string name="permission_heading">Contacts access needed</string>
+    <string name="permission_body">Contact Bridge reads and writes the device address book through the Contacts Provider. Android asks you to allow this once.</string>
+    <string name="permission_denied">Access was denied. Allow Contacts for Contact Bridge in Settings to continue.</string>
+    <string name="grant_access">Allow access</string>
+    <string name="open_settings">Open settings</string>
+
+    <string name="book_heading">01 / Shared address book</string>
+    <string name="book_hint">Read live from ContactsContract. Edits in any app appear here.</string>
+    <string name="new_contact">New contact</string>
+    <string name="search">Search by name</string>
+    <plurals name="contact_summary">
+        <item quantity="one">%1$d contact</item>
+        <item quantity="other">%1$d contacts</item>
+    </plurals>
+    <plurals name="search_summary">
+        <item quantity="one">%1$d match for “%2$s”</item>
+        <item quantity="other">%1$d matches for “%2$s”</item>
+    </plurals>
+    <string name="empty_contacts">The address book is empty.\nTap New contact to insert your first one through the provider.</string>
+    <string name="empty_search">No contact matches “%1$s”.</string>
+    <string name="loaded">Contacts queried from the provider.</string>
+    <string name="refreshed">Address book changed outside this app. List refreshed.</string>
+    <string name="added">“%1$s” inserted into the Contacts Provider.</string>
+    <string name="deleted">“%1$s” deleted from the Contacts Provider.</string>
+    <string name="missing_contact">This contact no longer exists.</string>
+    <string name="provider_error">Could not reach the Contacts Provider. Please try again.</string>
+    <string name="live_note">LIVE · CONTENT OBSERVER\nAdd, edit or delete a contact in the Contacts app, then return. This list updates without a refresh.</string>
+
+    <string name="new_contact_heading">02 / New contact</string>
+    <string name="new_contact_hint">Saved with ContentResolver.applyBatch() into RawContacts and Data.</string>
+    <string name="name">Full name</string>
+    <string name="phone">Phone</string>
+    <string name="email">Email (optional)</string>
+    <string name="note">Note (optional, e.g. USN)</string>
+    <string name="name_required">Enter a name</string>
+    <string name="phone_invalid">Enter a phone number with at least 3 digits</string>
+    <string name="email_invalid">Enter a valid email or leave it empty</string>
+    <string name="save_contact">Save to Contacts</string>
+    <string name="cancel">Cancel</string>
+
+    <string name="chevron" translatable="false">›</string>
+    <string name="contact_id">CONTACT #%1$d</string>
+    <string name="detail_pair">%1$s  ·  %2$s</string>
+    <string name="no_phone">No phone number</string>
+    <string name="open_in_contacts">Open in Contacts app</string>
+    <string name="share">Share details</string>
+    <string name="delete">Delete from device</string>
+    <string name="delete_title">Delete this contact?</string>
+    <string name="delete_message">“%1$s” will be removed from the device address book and from every app that reads it.</string>
+    <string name="no_contacts_app">No app on this device can open contacts.</string>
+    <string name="share_title">Share contact</string>
+</resources>

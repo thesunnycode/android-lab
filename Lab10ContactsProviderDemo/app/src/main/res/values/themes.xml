@@ -1,0 +1,18 @@
+<resources>
+    <style name="Theme.ContactBridge" parent="Theme.Material3.Light.NoActionBar">
+        <item name="colorPrimary">#B9472A</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+        <item name="colorSecondary">#B9472A</item>
+        <item name="colorPrimaryContainer">#F6E4DA</item>
+        <item name="colorOnPrimaryContainer">#5A1E0E</item>
+        <item name="colorSurface">#FBF7F2</item>
+        <item name="colorSurfaceContainerLow">#FBF7F2</item>
+        <item name="android:fontFamily">sans</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowBackground">#FBF7F2</item>
+        <item name="bottomSheetDialogTheme">@style/ThemeOverlay.ContactBridge.BottomSheet</item>
+    </style>
+    <style name="ThemeOverlay.ContactBridge.BottomSheet" parent="ThemeOverlay.Material3.BottomSheetDialog">
+        <item name="android:windowSoftInputMode">adjustResize</item>
+    </style>
+</resources>

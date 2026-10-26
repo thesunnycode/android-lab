@@ -18,6 +18,7 @@ Each lab is a self-contained Android Studio project covering one core concept.
 | 07 | [`Lab07ListViewImageViewDemo`](Lab07ListViewImageViewDemo) | Adaptive UI with `ListView` and `ImageView` — single-pane on phones, two-pane on tablets |
 | 08 | [`Lab08MenusWebViewDemo`](Lab08MenusWebViewDemo) | Options, context and popup menus driving a `WebView` — local HTML, in-app browsing, JS → Kotlin bridge |
 | 09 | [`Lab09DataPersistenceDemo`](Lab09DataPersistenceDemo) | SharedPreferences and SQLite — persistent student profile and study-session CRUD |
+| 10 | [`Lab10ContactsProviderDemo`](Lab10ContactsProviderDemo) | Data sharing via the Contacts Content Provider — query, search, batch insert, delete and live `ContentObserver` updates |
 
 ### Lab Test
 

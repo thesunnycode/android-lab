@@ -1,0 +1,30 @@
+<resources>
+    <style name="BridgeNode">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:minHeight">52dp</item>
+        <item name="android:paddingStart">6dp</item>
+        <item name="android:paddingEnd">6dp</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:textColor">#FBF7F2</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="BridgeArrow">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingStart">6dp</item>
+        <item name="android:paddingEnd">6dp</item>
+        <item name="android:textColor">#F0A48A</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:importantForAccessibility">no</item>
+    </style>
+    <style name="Avatar">
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/bg_avatar</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:importantForAccessibility">no</item>
+    </style>
+</resources>

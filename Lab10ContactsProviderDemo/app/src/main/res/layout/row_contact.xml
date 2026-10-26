@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp"
+    android:background="@drawable/bg_card" android:foreground="?attr/selectableItemBackground"
+    android:clickable="true" android:focusable="true" android:gravity="center_vertical"
+    android:minHeight="72dp" android:orientation="horizontal" android:padding="14dp">
+    <TextView android:id="@+id/avatar" style="@style/Avatar" android:layout_width="46dp" android:layout_height="46dp"
+        android:textSize="16sp" />
+    <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"
+        android:layout_marginStart="14dp" android:orientation="vertical">
+        <TextView android:id="@+id/contactName" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:textColor="#2A211C" android:textSize="16sp" android:textStyle="bold" android:maxLines="1" android:ellipsize="end" />
+        <TextView android:id="@+id/contactDetail" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="2dp" android:textColor="#75655B" android:textSize="13sp" android:maxLines="2" android:ellipsize="end" />
+        <TextView android:id="@+id/contactNote" android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_marginTop="6dp" android:background="@drawable/bg_chip" android:paddingStart="8dp"
+            android:paddingEnd="8dp" android:paddingTop="3dp" android:paddingBottom="3dp" android:textColor="#5A1E0E"
+            android:textSize="11sp" android:textStyle="bold" android:letterSpacing="0.04" android:visibility="gone" />
+    </LinearLayout>
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="8dp"
+        android:text="@string/chevron" android:textColor="#BBAA9E" android:textSize="24sp" android:importantForAccessibility="no" />
+</LinearLayout>

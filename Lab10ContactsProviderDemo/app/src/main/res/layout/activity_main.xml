@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root" android:layout_width="match_parent" android:layout_height="match_parent"
+    android:fillViewport="true" android:clipToPadding="false">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical" android:padding="24dp">
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="@string/experiment_label" android:textColor="#B9472A" android:textSize="11sp"
+            android:letterSpacing="0.12" android:textStyle="bold" />
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="8dp" android:text="@string/app_name" android:textColor="#2A211C"
+            android:textSize="34sp" android:fontFamily="sans-serif-medium" android:letterSpacing="-0.02" />
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="2dp" android:text="@string/tagline" android:textColor="#75655B" android:textSize="14sp" />
+
+        <!-- The data path this experiment demonstrates: app ⇄ provider ⇄ system Contacts app. -->
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="22dp" android:background="@drawable/bg_bridge"
+            android:orientation="vertical" android:padding="18dp">
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:text="@string/bridge_label" android:textColor="#F0A48A" android:textSize="11sp"
+                android:letterSpacing="0.14" android:textStyle="bold" />
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginTop="12dp" android:gravity="center_vertical" android:orientation="horizontal">
+                <TextView style="@style/BridgeNode" android:layout_width="0dp" android:layout_weight="1"
+                    android:background="@drawable/bg_node" android:text="@string/node_app" />
+                <TextView style="@style/BridgeArrow" android:text="@string/arrow" />
+                <TextView style="@style/BridgeNode" android:layout_width="0dp" android:layout_weight="1.2"
+                    android:background="@drawable/bg_node_active" android:text="@string/node_provider" />
+                <TextView style="@style/BridgeArrow" android:text="@string/arrow" />
+                <TextView style="@style/BridgeNode" android:layout_width="0dp" android:layout_weight="1"
+                    android:background="@drawable/bg_node" android:text="@string/node_contacts" />
+            </LinearLayout>
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginTop="14dp" android:text="@string/provider_uri" android:textColor="#FBF7F2"
+                android:textSize="12sp" android:fontFamily="monospace" />
+            <TextView android:id="@+id/providerStatus" android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginTop="2dp" android:text="@string/provider_waiting" android:textColor="#BBAA9E"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout android:id="@+id/permissionCard" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="16dp" android:background="@drawable/bg_card" android:orientation="vertical"
+            android:padding="20dp" android:visibility="gone">
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:text="@string/permission_heading" android:textColor="#2A211C" android:textStyle="bold" android:textSize="17sp" />
+            <TextView android:id="@+id/permissionBody" android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginTop="6dp" android:text="@string/permission_body" android:textColor="#75655B"
+                android:textSize="13sp" android:lineSpacingExtra="3dp" />
+            <com.google.android.material.button.MaterialButton android:id="@+id/grantAccess"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginTop="12dp" android:minHeight="48dp" android:text="@string/grant_access" />
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="28dp" android:gravity="center_vertical" android:orientation="horizontal">
+            <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"
+                android:text="@string/book_heading" android:textColor="#2A211C" android:textStyle="bold" android:textSize="19sp" />
+            <com.google.android.material.button.MaterialButton android:id="@+id/addContact"
+                android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="48dp"
+                android:text="@string/new_contact" app:icon="@drawable/ic_add" app:iconSize="18dp" />
+        </LinearLayout>
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="2dp" android:text="@string/book_hint" android:textColor="#75655B" android:textSize="12sp" />
+        <com.google.android.material.textfield.TextInputLayout android:id="@+id/searchLayout"
+            style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="14dp" android:hint="@string/search"
+            app:boxCornerRadiusTopStart="14dp" app:boxCornerRadiusTopEnd="14dp"
+            app:boxCornerRadiusBottomStart="14dp" app:boxCornerRadiusBottomEnd="14dp"
+            app:boxBackgroundColor="#FFFFFF" app:startIconDrawable="@drawable/ic_search" app:endIconMode="clear_text">
+            <com.google.android.material.textfield.TextInputEditText android:id="@+id/searchInput"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:inputType="textPersonName" android:imeOptions="actionSearch" android:maxLength="60"
+                android:singleLine="true" android:importantForAutofill="no" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <TextView android:id="@+id/summary" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="14dp" android:textColor="#B9472A" android:textStyle="bold" android:textSize="13sp"
+            android:letterSpacing="0.04" />
+        <TextView android:id="@+id/status" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="2dp" android:textColor="#75655B" android:textSize="12sp" android:accessibilityLiveRegion="polite" />
+        <TextView android:id="@+id/emptyContacts" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="12dp" android:background="@drawable/bg_card" android:padding="20dp"
+            android:textColor="#75655B" android:textSize="14sp" android:lineSpacingExtra="4dp" android:visibility="gone" />
+        <LinearLayout android:id="@+id/contactList" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="vertical" />
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="24dp" android:text="@string/live_note" android:textColor="#75655B"
+            android:textSize="11sp" android:lineSpacingExtra="5dp" />
+    </LinearLayout>
+</ScrollView>
