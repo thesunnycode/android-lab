@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root" android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- Header and category filters. -->
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:layout_marginStart="16dp" android:layout_marginTop="12dp" android:layout_marginEnd="16dp"
+        android:background="@drawable/bg_header" android:orientation="vertical" android:paddingStart="18dp"
+        android:paddingTop="14dp" android:paddingEnd="18dp" android:paddingBottom="14dp">
+        <TextView style="@style/Eyebrow" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:text="@string/experiment_label" android:textColor="#B5741A" />
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="2dp" android:baselineAligned="false" android:gravity="bottom" android:orientation="horizontal">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="@string/app_name" android:textColor="#1F3D2E" android:textSize="28sp"
+                android:fontFamily="serif" android:textStyle="bold" android:letterSpacing="-0.01" />
+            <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"
+                android:layout_marginStart="10dp" android:layout_marginBottom="5dp" android:text="@string/tagline"
+                android:textColor="#7A6A55" android:textSize="12sp" android:maxLines="2" />
+        </LinearLayout>
+        <TextView android:id="@+id/explorer" android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_marginTop="8dp" android:background="@drawable/bg_explorer" android:drawablePadding="6dp"
+            android:gravity="center_vertical" android:paddingStart="8dp" android:paddingTop="4dp" android:paddingEnd="12dp"
+            android:paddingBottom="4dp" android:text="@string/explorer" android:textColor="#1F3D2E" android:textSize="12sp"
+            android:textStyle="bold" app:drawableStartCompat="@drawable/ic_person" app:drawableTint="#1F3D2E" />
+    </LinearLayout>
+    <HorizontalScrollView android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:clipToPadding="false" android:paddingStart="16dp" android:paddingEnd="16dp" android:scrollbars="none">
+        <com.google.android.material.chip.ChipGroup android:id="@+id/filters"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"
+            app:chipSpacingHorizontal="8dp" app:selectionRequired="true" app:singleLine="true" app:singleSelection="true" />
+    </HorizontalScrollView>
+
+    <!-- The Google Map, framed as a rounded window with its controls floating on the right. -->
+    <FrameLayout android:id="@+id/mapWindow" android:layout_width="match_parent" android:layout_height="0dp"
+        android:layout_weight="1" android:layout_marginStart="16dp" android:layout_marginTop="2dp"
+        android:layout_marginEnd="16dp" android:background="@drawable/bg_map_window">
+        <WebView android:id="@+id/map" android:layout_width="match_parent" android:layout_height="match_parent" />
+        <com.google.android.material.progressindicator.LinearProgressIndicator android:id="@+id/mapProgress"
+            android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_gravity="top"
+            app:indicatorColor="#E8A33D" app:trackColor="#00000000" />
+        <LinearLayout android:id="@+id/mapOffline" android:layout_width="match_parent" android:layout_height="match_parent"
+            android:background="#F3EBDD" android:gravity="center" android:orientation="vertical" android:padding="32dp"
+            android:visibility="gone">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:gravity="center"
+                android:text="@string/map_offline" android:textColor="#5B4A3A" android:textSize="14sp" />
+            <com.google.android.material.button.MaterialButton android:id="@+id/retry"
+                android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12dp"
+                android:minHeight="48dp" android:text="@string/retry" />
+        </LinearLayout>
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_gravity="end|top" android:layout_marginTop="2dp" android:layout_marginEnd="10dp" android:orientation="vertical">
+            <com.google.android.material.floatingactionbutton.FloatingActionButton android:id="@+id/layers"
+                style="@style/MapControl" android:contentDescription="@string/layers" app:srcCompat="@drawable/ic_layers" />
+            <com.google.android.material.floatingactionbutton.FloatingActionButton android:id="@+id/fit"
+                style="@style/MapControl" android:contentDescription="@string/fit" app:srcCompat="@drawable/ic_fit" />
+            <com.google.android.material.floatingactionbutton.FloatingActionButton android:id="@+id/openMaps"
+                style="@style/MapControl" android:contentDescription="@string/open_maps" app:srcCompat="@drawable/ic_open" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <!-- Trail summary and the place carousel. -->
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:layout_marginStart="16dp" android:layout_marginTop="10dp" android:layout_marginEnd="16dp"
+        android:background="@drawable/bg_trail_bar" android:gravity="center_vertical" android:orientation="horizontal"
+        android:paddingStart="18dp" android:paddingTop="12dp" android:paddingEnd="8dp" android:paddingBottom="12dp">
+        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"
+            android:orientation="vertical">
+            <TextView style="@style/Eyebrow" android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:text="@string/trail_label" android:textColor="#E8A33D" />
+            <TextView android:id="@+id/trailSummary" android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginTop="2dp" android:text="@string/trail_empty" android:textColor="#FFFFFF"
+                android:textSize="15sp" android:textStyle="bold" />
+            <TextView android:id="@+id/status" android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginTop="2dp" android:text="@string/trail_hint" android:textColor="#B9C9BC"
+                android:textSize="12sp" android:maxLines="2" android:ellipsize="end"
+                android:accessibilityLiveRegion="polite" />
+        </LinearLayout>
+        <com.google.android.material.button.MaterialButton android:id="@+id/clearTrail"
+            style="@style/Widget.Material3.Button.TextButton" android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:minHeight="48dp" android:text="@string/clear"
+            android:textColor="#E8A33D" android:visibility="gone" />
+    </LinearLayout>
+    <HorizontalScrollView android:id="@+id/placeScroller" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:layout_marginTop="10dp" android:clipToPadding="false"
+        android:paddingStart="16dp" android:paddingEnd="6dp" android:scrollbars="none">
+        <LinearLayout android:id="@+id/placeList" android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:orientation="horizontal" android:paddingTop="2dp"
+            android:paddingBottom="12dp" />
+    </HorizontalScrollView>
+</LinearLayout>

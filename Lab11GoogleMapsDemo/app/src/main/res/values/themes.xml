@@ -1,0 +1,43 @@
+<resources>
+    <style name="Theme.NammaTrail" parent="Theme.Material3.Light.NoActionBar">
+        <item name="colorPrimary">#1F3D2E</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+        <item name="colorSecondary">#E8A33D</item>
+        <item name="colorPrimaryContainer">#EAF0E6</item>
+        <item name="colorOnPrimaryContainer">#1F3D2E</item>
+        <item name="colorSecondaryContainer">#F6E2BC</item>
+        <item name="colorOnSecondaryContainer">#4A3110</item>
+        <item name="colorSurface">#FBF6EC</item>
+        <item name="colorSurfaceContainerLow">#FBF6EC</item>
+        <item name="android:fontFamily">sans</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowBackground">#F3EBDD</item>
+    </style>
+
+    <style name="Eyebrow">
+        <item name="android:textSize">10sp</item>
+        <item name="android:letterSpacing">0.16</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="MapControl" parent="Widget.Material3.FloatingActionButton.Small.Surface">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="backgroundTint">#FBF6EC</item>
+        <item name="tint">#1F3D2E</item>
+    </style>
+
+    <style name="FilterChip" parent="Widget.Material3.Chip.Filter">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="chipBackgroundColor">@color/chip_background</item>
+        <item name="android:textColor">@color/chip_text</item>
+        <item name="chipStrokeColor">#E6DCC8</item>
+        <item name="chipIconSize">10dp</item>
+        <item name="chipIconVisible">true</item>
+        <item name="checkedIconVisible">false</item>
+        <item name="chipIcon">@drawable/dot</item>
+        <item name="android:checkable">true</item>
+    </style>
+</resources>
