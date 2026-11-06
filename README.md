@@ -20,6 +20,7 @@ Each lab is a self-contained Android Studio project covering one core concept.
 | 09 | [`Lab09DataPersistenceDemo`](Lab09DataPersistenceDemo) | SharedPreferences and SQLite — persistent student profile and study-session CRUD |
 | 10 | [`Lab10ContactsProviderDemo`](Lab10ContactsProviderDemo) | Data sharing via the Contacts Content Provider — query, search, batch insert, delete and live `ContentObserver` updates |
 | 11 | [`Lab11GoogleMapsDemo`](Lab11GoogleMapsDemo) | Displaying Google Maps — keyless Google Maps embed in a `WebView`, place search, multi-stop walking routes, map/satellite/terrain layers, Maps URL intents |
+| 12 | [`Lab12HttpWebServicesDemo`](Lab12HttpWebServicesDemo) | Accessing web services with HTTP requests — `HttpURLConnection` GET and JSON POST to public REST APIs, `org.json` parsing, background threading, error handling and an in-app HTTP inspector |
 
 ### Lab Test
 

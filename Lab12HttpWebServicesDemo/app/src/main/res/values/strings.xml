@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">TripCast</string>
+    <string name="student">Sunny Kr Singh · USN 25MCAR0230</string>
+    <string name="tagline">Field-trip weather desk · HTTP web services</string>
+    <string name="mode_get">GET · Weather</string>
+    <string name="mode_post">POST · Check-in</string>
+    <string name="city_hint">Destination city</string>
+    <string name="fetch">Fetch forecast</string>
+    <string name="quick_picks">QUICK PICKS · KARNATAKA &amp; NEARBY</string>
+    <string name="now">CURRENT CONDITIONS</string>
+    <string name="five_day">5-DAY FORECAST</string>
+    <string name="checkin_title">Register for the field trip</string>
+    <string name="checkin_body">Your details are sent as JSON in the body of an HTTP POST request. The server stores them and replies with the new record.</string>
+    <string name="name_hint">Student name</string>
+    <string name="usn_hint">USN</string>
+    <string name="destination_hint">Trip destination</string>
+    <string name="send">Send check-in</string>
+    <string name="inspector">HTTP INSPECTOR</string>
+    <string name="inspector_idle">No request yet. Fetch a forecast or send a check-in to see the raw HTTP exchange here.</string>
+    <string name="request_body">REQUEST BODY</string>
+    <string name="response_body">RESPONSE BODY</string>
+    <string name="default_name">Sunny Kr Singh</string>
+    <string name="default_usn">25MCAR0230</string>
+    <string name="default_destination">Mysuru</string>
+</resources>
